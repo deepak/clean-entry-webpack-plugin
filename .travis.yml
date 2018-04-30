@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+install:
+  - yarn --frozen-lockfile --silent --non-interactive --no-progress
+
+script:
+  - commitlint-travis
+
+# non-sudo for a [faster](https://docs.travis-ci.com/user/reference/overview/#Container-based) container-based build.
+sudo: false
+
+git:
+  submodules: false
+
+notifications:
+  email: false
+
+cache:
+  yarn: true
+  directories:
+    - "node_modules"

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+run_test() {
+  commitlint -e $GIT_PARAMS
+}
+
+case "${1}" in
+    --about )
+        echo -n "Lints commit message."
+        ;;
+    * )
+        run_test "$@"
+        ;;
+esac

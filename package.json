@@ -1,0 +1,40 @@
+{
+  "name": "clean-entry-webpack-plugin",
+  "version": "0.0.1",
+  "description": "A webpack plugin to remove unwanted javascript files which is useful for css only webpack builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepak/clean-entry-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "clean",
+    "cleanup",
+    "entry",
+    "css",
+    "css-build",
+    "css-only-build"
+  ],
+  "author": "Deepak Kannan <kannan.deepak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepak/clean-entry-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/deepak/clean-entry-webpack-plugin#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "@commitlint/travis-cli": "^6.1.3"
+  },
+  "peerDependencies": {
+    "webpack": "^4.6.0"
+  },
+  "engines": {
+    "node": ">=8.x"
+  }
+}
